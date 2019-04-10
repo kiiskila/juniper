@@ -1,0 +1,61 @@
+/*
+    COMP 2681
+    Mohd Abdullah
+    Final Project
+
+   Juniper Taekwon-Do
+
+
+   Filename:         evstyles.css
+   Supporting Files: 
+
+*/
+
+/* Body styles */
+
+h3, h1, p {
+    background-color: whitesmoke;
+    font-family: 'Heebo', sans-serif;
+}
+
+
+/* div styles for width */
+
+div {
+    width: 95%;
+    margin: 0px auto;
+}
+
+div.event {
+    margin-bottom: 80px;
+}
+
+/* h1 styles */
+
+div h1 {
+    text-align: center;
+    margin: 25px auto;
+    letter-spacing: 4px;
+    border-bottom: solid rgb(107, 110, 115) 3px;
+    font-variant: small-caps;
+    border-radius: 35px;
+}
+
+/* h3 subtitles */
+
+h3 {
+    text-indent: -30px;
+}
+
+/* paragraph styles */
+
+div.event {
+    line-height: 2.0;
+}
+
+/* visited pseudo style */
+
+p a:visited {
+    color: gold;
+    
+}

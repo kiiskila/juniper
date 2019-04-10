@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+
+   <head>
+   <!--
+      COMP 2681
+      Mohd Abdullah
+      Final Project
+
+      Juniper Taekwon-Do
+      Author: Will Kiiskila
+      Date:   04/04/2019
+
+      Filename:         contact_us.htm
+      Supporting files: modernizr-1.5.js, costyles.css, hfstyles.css
+   -->
+
+      <meta charset="UTF-8" />
+      <title>Contact Us</title>
+      <script src="modernizr-1.5.js"></script>
+      <link href="costyles.css" rel="stylesheet" type="text/css" />
+      <link href="hfstyles.css" rel="stylesheet" type="text/css" />
+      <script src="validation.js"></script>
+
+   </head>
+        
+   <body>
+
+       <header>
+
+            <img id="banner" src="banner.png" alt="banner" usemap="#tkdlogo"/>
+            <map name="tkdlogo">
+                    <area shape="poly" coords="186,38,310,93,299,201,188,297,93,207,65,93" href="../index.htm" alt="" />
+            </map>
+
+       </header>
+
+
+       <nav class="horizontal">
+           <ul>
+
+           <li><a href="../index.htm">Home</a></li>
+           <li><a href="classes.htm">Classes</a></li>
+           <li><a href="events.htm">Events</a></li>
+           <li><a href="contact_us.htm">Contact Us</a></li>
+           
+           </ul>
+       </nav>
+
+       <h1 id="conUs">Contact Us!</h1>
+
+       <form class="contact" name="contact">
+
+            Name*<br />
+            <input type="text" name="Name" id="Name" required="required"/><br />
+
+            Email*<br />
+            <input type="email" name="Email" id="Email" required="required"/><br />
+
+            Subject*<br />
+            <input type="text" name="Subject" id="Subject" value="Registration" required="required"/><br />
+
+            Message<br />
+            <textarea id="Message" name="Message" required="required"></textarea><br />
+
+            <input type="submit" value="submit" id="submit" onclick="validate();"/>
+
+
+       </form>
+
+       <footer>
+            <address>
+                Houston BC, Canada
+            </address>
+
+            <address>
+                <a href="resources.htm">Resources</a> &curren; Last Updated: April, 2019
+            </address>
+        </footer>
+
+   </body>
+
+</html>

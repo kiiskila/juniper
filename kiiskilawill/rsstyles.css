@@ -1,0 +1,86 @@
+/*
+    COMP 2681
+    Mohd Abdullah
+    Final Project
+
+   Juniper Taekwon-Do
+
+
+   Filename:         rsstyles.css
+   Supporting Files: 
+
+*/
+
+/* Body styles */
+
+body {
+    background-color: whitesmoke;
+    font-family: Tahoma, serif;
+    width: 90%;
+    margin: 0px auto;
+}
+
+/* anchor styles */
+
+section p a, section p ~ a {
+    color: black;
+    font-size: 1.2em;
+    text-decoration: none;
+}
+
+#inLink {
+    font-size: 1.0em;
+    text-decoration: underline;
+}
+
+/* hover styles */
+
+section p a:hover, section p ~ a:hover {
+    color: rgba(0, 0, 0, 0.3)
+}
+
+/* Footer styles */
+
+footer {
+    clear: left;
+    display: block;
+}
+
+footer address {
+    display: block;
+    font-style: normal;
+    text-align: center;
+    font-size: 14px;
+    line-height: 20px;
+    height: 20px;
+    background-color: rgb(107, 110, 115);
+    color: whitesmoke;
+}
+
+footer address a {
+    text-decoration: none;
+    color: whitesmoke;
+}
+
+/* horizontal line styles */
+
+hr#line {
+    border-top: 1px solid rgb(107, 110, 115);
+    width: 70%;
+}
+
+/* paragraph styles */
+
+p#description {
+    display: block;
+    width: 70%;
+    margin: 0px auto;
+}
+
+/* h1 styles */
+
+h1, a h4 {
+    display: block;
+    text-align: center;
+    color: black;
+}

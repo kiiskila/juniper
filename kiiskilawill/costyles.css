@@ -1,0 +1,74 @@
+/*
+    COMP 2681
+    Mohd Abdullah
+    Final Project
+
+   Juniper Taekwon-Do
+
+
+   Filename:         costyles.css
+   Supporting Files: 
+
+*/
+
+/* Body styles */
+
+body {
+    background-color: whitesmoke;
+    font-family: Tahoma, serif;
+}
+
+/* form styles */
+
+form.contact div {
+    display: block;
+    clear: left;
+    float: left;
+}
+
+form.contact input {
+    width: 250px;
+}
+
+textarea {
+    margin-top: 10px;
+    height: 200px;
+    width: 400px;
+}
+
+form {
+    margin-left: 50px;
+}
+
+form input {
+    margin-bottom: 45px;
+    margin-top: 10px;
+    height: 30px;
+    font-size: 1.25em;
+}
+
+/* header styles */
+
+h1 {
+    margin: 75px 0px 30px 50px;
+}
+
+/* Submit button styles */
+
+input#submit {
+    height: 75px;
+    width: 400px;
+    letter-spacing: 15px;
+    font-weight: 800;
+    text-transform: uppercase;
+}
+
+/* input valid styles */
+
+input:focus, textarea:focus {
+    background-color: rgb(252, 240, 240);
+}
+
+input:focus:valid, textarea:focus:valid {
+    background-color: hsla(120, 100%, 93%, 1);
+}

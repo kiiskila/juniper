@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <!--
+      COMP 2681
+      Mohd Abdullah
+      Final Project
+
+      Juniper Taekwon-Do
+      Author: Will Kiiskila
+      Date:   04/04/2019
+
+      Filename:         index.htm
+      Supporting files: modernizr-1.5.js, hfstyles.css, banner.png, instyles.css, date.js, clip.mp4/swf/webm, competition1.png
+   -->
+    <meta charset="UTF-8" />
+    <meta name="author" content="Will Kiiskila" />
+    <meta name="description"
+        content="A site for Juniper Taekwon-Do in Houston, to register, view the schedule or see upcoming events." />
+    <meta name="keywords" content="Taekwondo, martial arts, sparring, ITF, kick, punch, korean" />
+
+    <base href="kiiskilawill/" />
+    <title>Juniper Taekwon-Do</title>
+    <script src="modernizr-1.5.js" type="text/javascript"></script>
+    <link href="hfstyles.css" rel="stylesheet" type="text/css" />
+    <script src="date.js" type="text/javascript"></script>
+
+    <style type="text/css">
+
+        /* html gradient style */
+
+        html {
+            background-image: linear-gradient(whitesmoke, rgb(107, 110, 115));
+        }
+
+        /* Body styles */
+
+        body {
+            font-family: Tahoma, serif;
+        }
+
+        /* intro styles */
+
+        div.noContract, div.specialOffer {
+            width: 50%;
+            border-bottom: solid black 3px;
+            padding-bottom: 10px;
+        }
+
+        div.noContract {
+            clear: right;
+            float: right;
+        }
+
+        div.specialOffer {
+            float: left;
+            clear: left;
+        }
+
+        section#intro {
+            width: 90%;
+            margin: 20px auto;
+        }
+
+        /* what is taekwondo styles */
+
+        #tae, #do, #kwon {
+            width: 31%;
+            clear: right;
+            float: left;
+        }
+
+        #tae h3, #do h3, #kwon h3 {
+            text-align: center;
+        }
+
+        #tae, #kwon {
+            border-right: 5px solid black;
+            box-shadow: inset -2em 0 rgb(107, 110, 115);
+        }
+
+        #kwon, #do {
+            margin-left: 10px;
+        }
+
+        #whatIsTKD p {
+            width: 65%;
+            margin: 10px auto;
+        }
+
+        /* philosophy and oath styles */
+
+        #oath {
+            margin-left: 25px;
+        }
+
+        #oath ol li {
+            margin: 2px 0px;
+        }
+
+        /* descritpion list spacing styles */
+
+        #ranks p {
+            text-align: center;
+        }
+
+        #ranks p:last-of-type {
+            margin-bottom: 25px;
+        }
+
+        div#ranks div {
+            width: 50%;
+        }
+
+        div#ranks div:first-of-type {
+            clear: left;
+            float: left;
+        }
+
+        div#ranks div:last-of-type {
+            clear: right;
+            float: right;
+        }
+
+        /* description list styles */
+
+        dl dt {
+            font-weight: 800;
+        }
+
+        div#divBody {
+            width: 97%;
+            margin: 0px auto;
+        }
+
+        /* drop cap for first h1 */
+
+        h1:first-of-type::first-letter {
+            font-size: 1.7em;
+        }
+
+        /* h2 styles */
+
+        h2#subTitle {
+            text-align: center;
+            margin: 25px auto;
+            font-size: 32pt;
+
+            text-shadow: 5px 2px 2px rgb(107, 110, 115);
+            -moz-text-shadow: 5px 2px 2px rgb(107, 110, 115);
+            -webkit-text-shadow: 5px 2px 2px rgb(107, 110, 115);
+            -o-text-shadow: 5px 2px 2px rgb(107, 110, 115);
+        }
+
+        /* picture and video styles */
+
+        #compPic object {
+            margin: 20px auto;
+            opacity: 1.0;
+        }
+
+        div#compPic p {
+            width: 33%;
+            margin: 0px auto 50px auto;
+            text-align: center;
+        }
+
+        div#compPic {
+            margin: 0px auto 25px auto;
+            text-align: center;
+        }
+
+        #compPic object:hover {
+            transform: rotate(1deg);
+            opacity: 0.8;
+        }
+
+        /* heading styles for h2 */
+
+        h2#sub {
+            text-align: center;
+            margin: 25px;
+        }
+
+        /* Cross Reference styles */
+
+        p#crPage {
+            text-align: center;
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+    <header>
+
+        <img id="banner" src="banner.png" alt="banner" usemap="#tkdlogo" />
+        <map name="tkdlogo" id="tkdlogo">
+            <area shape="poly" coords="65,26,62,213,189,333,311,221,315,24" href="../index.htm" alt="" />
+        </map>
+
+    </header>
+
+
+    <nav class="horizontal">
+        <ul>
+
+            <li><a href="../index.htm">Home</a></li>
+            <li><a href="classes.htm">Classes</a></li>
+            <li><a href="events.htm">Events</a></li>
+            <li><a href="contact_us.htm">Contact Us</a></li>
+
+        </ul>
+    </nav>
+
+    <p id="crPage">
+        <a href="crossreference.htm">Cross Reference Page</a>
+    </p>
+        
+    <h1 id="h1style" style="text-align: center;margin: 25px;">Juniper Taekwon-Do</h1>
+
+    <section id="intro">
+        <p>
+            We train in the Korean martial art of Taekwon-Do, a dynamic martial art that uses
+            many different hand and foot techniques such as kicks, punches, blocks and
+            strikes as a means of self-defence for exercise and sport.
+        </p>
+
+        <p>
+            At Juniper TaeKwon-Do you are motivated and encouraged, but never pressured.
+            Our classes are structured with a solid foundation that does not skip over anything, while still
+            allowing for you to advance at a fast pace if you are motivated. As a pupil
+            of Juniper TaeKwon-Do, you will work with one of our instructors to set out specific
+            goals and work together to reach them.
+        </p>
+
+        <p>
+            The Juniper TaeKwon-Do school is an energetic, positive enviroment where you can
+            have fun while benefiting in so many ways: flexibility, cardio, physical strengths,
+            self-discipline, increased communication skills and self confidence. All the while
+            gaining life-long friends!
+        </p><br />
+
+        <div class="specialOffer">
+            <h2>Special Offer</h2>
+            <p>
+                Try a couple of classes for free and see why joining us at Juniper Taekwon-Do can be
+                the perfect decision for you! Just send us an email or drop in with some athletic clothing.
+            </p>
+        </div>
+
+        <div class="noContract">
+            <h2>No Contract</h2>
+            <p>
+                We won't ask you to sign a contract, and all dues can be paid monthly. We have discounts
+                if you pre-pay multiple months at one time. Post-dated cheques are the preffered payment method.
+            </p>
+        </div>
+
+    </section>
+
+    <div id="compPic">
+        <object width="408" height="306" data="competition1.jpg"></object>
+        <p>
+            Pictured from top to bottom, left to right. Seb, David, Geoff, Devlyn, Craig, Sarah.
+        </p>
+
+        <video controls="controls">
+            <source src="clip.mp4" />
+            <source src="clip.webm" />
+
+            <object id="clip" data="clip.swf" type="application/x-shockwave-flash" width="300" height="20">
+            <param name="movie" value="clip.swf" />
+            <param name="quality" value="high" />
+            <param name="meu" value="false" />
+
+                You must have the
+                <a href="http://www.adobe.com/products/shockwaveplayer/">
+                Shockwave Player
+                </a>
+                to play this clip.
+
+            </object>
+        </video>
+    </div>
+
+
+    <h2 id="sub">What is Taekwon-Do</h2>
+
+    <div id="divBody">
+        <section id="whatIsTKD">
+            <p>
+                Taekwon-Do, the mental training and the techniques of unarmed combat for self-defence as well
+                as health, involving the skilled application of punches, kicks, blocks and dodges with bare hands and
+                feet.
+            </p>
+
+            <div id="tae">
+                <h3>Tae &#53468;/&#36294;</h3>
+                <p>Represents for jumping or flying, to kick or smash with the foot.</p>
+            </div>
+
+            <div id="kwon">
+                <h3>Kwon &#44428;/&#25331;</h3>
+                <p>Represents the fist – chiefly to punch or destroy with the hand or fist.</p>
+            </div>
+
+            <div id="do">
+                <h3>Do &#46020;/&#36947;</h3>
+                <p>Represents an art or way – the right way built and paved by the saints and sages in the past.</p><br />
+            </div>
+
+        </section>
+
+        <div id="oath">
+            <h2>Philosophy of Taekwon-Do</h2>
+            <ol>
+                <li>Be willing to go where the going may be tough and do the things that are worth doing even though
+                    they are difficult.</li>
+                <li>Be gentle to the weak and tough to the strong.</li>
+                <li>Be content with what you have in money and position, but never in skills.</li>
+                <li>Always finish what you begin, be it large or small.</li>
+                <li>Be a willing teacher to anyone regardless of religion, race or ideology.</li>
+                <li>Never yield to repression or threat in the pursit of a noble cause.</li>
+                <li>Teach attitude and skill with action rather than words.</li>
+                <li>Always be yourself even though your circumstances may change.</li>
+                <li>Be the eternal teacher who teaches with the body when young, with words when old and by moral
+                    precept even after death.</li>
+            </ol><br />
+
+            <h2>Student Oath</h2>
+            <ol>
+                <li>I shall observe the tenents of Takwon-Do.</li>
+                <li>I shall respect the instructor and seniors.</li>
+                <li>I shall never misue Taekwon-Do.</li>
+                <li>I shall be a champion of freedom and justice.</li>
+                <li>I shall build a more peaceful world.</li>
+            </ol><br />
+        </div>
+
+        <h2 id="subTitle">System of Rank</h2>
+        <div id="ranks">
+            <p>
+                The ITF ranking system consists of six solid color belts; white, yellow, green, blue, red, and black.
+            </p>
+
+            <p>
+                The ITF ranking system also consists of nine ranks (degrees) of black belts, from one to nine.
+            </p>
+
+            <div>
+                <h3>Colored Belt Ranks - Lowest to Highest Rank</h3>
+                <dl>
+                    <dt>10th Gup - White Belt</dt>
+                    <dd>Signifies innocence, as that of the beginning student who has no previous knowledge of
+                        Taekwon-Do.</dd>
+                    <dt>9th Gup – White Belt with a yellow stripe</dt>
+                    <dd></dd>
+                    <dt>8th Gup - Yellow Belt</dt>
+                    <dd>Signifies the earth from which a plant sprouts and takes root as the foundation of Taekwon-Do is
+                        being laid.</dd>
+                    <dt>7th Gup - Yellow with green stripe</dt>
+                    <dd></dd>
+                    <dt>6th Gup - Green Belt</dt>
+                    <dd>Signifies the plant’s growth as Taekwon-Do skills begin to develop.</dd>
+                    <dt>5th Gup - Green with blue stripe.</dt>
+                    <dd></dd>
+                    <dt>4th Gup - Blue Belt</dt>
+                    <dd>Signifies the Heaven towards which the plant matures into a towering tree as training in
+                        Taekwon-Do progresses</dd>
+                    <dt>3rd Gup - Blue Belt with a red stripe.</dt>
+                    <dd></dd>
+                    <dt>2nd Gup - Red Belt</dt>
+                    <dd>Signifies Danger, cautioning the student to exercise control and warning the opponent to stay
+                        away.</dd>
+                    <dt>1st Gup – Red Belt with black stripe.</dt>
+                    <dd></dd>
+                </dl>
+            </div>
+
+            <div>
+                <h3>Black Belt Ranks - Lowest to Highest</h3>
+                <dl>
+                    <dt>1st Dan (degree)</dt>
+                    <dd>Opposite of white, therefore signifying maturity and proficiency in Taekwon-Do. Also indicates
+                        the wearer’s imperviousness to darkness and fear.</dd>
+                    <dt>2nd Dan (degree)</dt>
+                    <dd>Assistant Instructor (must remain at this rank at least 2 years).</dd>
+                    <dt>3rd Dan (degree)</dt>
+                    <dd>Assistant Instructor (must remain at this rank at least 3 years).</dd>
+                    <dt>4th Dan (degree)</dt>
+                    <dd>International Instructor (must remain at this rank at least 4 years). At this point, a person
+                        may become a “SaBum-Nim”.</dd>
+                    <dt>5th Dan (degree)</dt>
+                    <dd>Instructor (must remain at this rank at least 5 years).</dd>
+                    <dt>6th Dan (degree)</dt>
+                    <dd>Instructor (must remain at this rank at least 6 years).</dd>
+                    <dt>7th Dan (degree)</dt>
+                    <dd>Master Instructor (must remain at this rank at least 7 years).</dd>
+                    <dt>8th Dan (degree)</dt>
+                    <dd>Master Instructor (must remain at this rank at least 8 years).</dd>
+                    <dt>9th Dan (degree)</dt>
+                    <dd>Grand Master.</dd>
+                </dl>
+            </div>
+        </div>
+    </div>
+    <footer id="footer">
+        <address>
+            Houston BC, Canada
+        </address>
+
+        <address>
+            <a href="resources.htm">Resources</a> &curren; Last Updated: April, 2019
+        </address>
+
+        <address>
+            <p id="clock">Current Date: Current Time:</p>
+        </address>
+    </footer>
+
+</body>
+
+</html>

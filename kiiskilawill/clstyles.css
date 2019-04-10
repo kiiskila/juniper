@@ -1,0 +1,104 @@
+/*
+    COMP 2681
+    Mohd Abdullah
+    Final Project
+
+   Juniper Taekwon-Do
+
+
+   Filename:         clstyles.css
+   Supporting Files: 
+
+*/
+
+/* Body styles */
+
+body {
+    background-color: whitesmoke;
+    font-family: Tahoma, serif;
+}
+
+/* tables styles */
+
+table.classes {
+    border: 4px solid black;
+    border-collapse: collapse;
+    width: 90%;
+    margin: 25px auto;
+}
+
+table.classes th, table.classes td {
+    border: 2px solid black;
+}
+
+/* table caption styles */
+
+table.classes caption {
+    caption-side: bottom;
+    text-align: center;
+}
+
+/* Table body styles */
+
+table.classes tbody tr {
+    height: 80px;
+    text-align: center;
+    font-weight: 300;
+}
+
+/* table head styles */
+
+table.classes tr > th {
+    height: 40px;
+    background-color: rgb(240, 240, 240);
+}
+
+/* column spacing styles */
+
+div table.classes colgroup col.firstCol {
+    width: 10%;
+}
+
+div table.classes colgroup col.days {
+    width: 12%;
+}
+
+/* No activity column styles */
+
+div table.classes tbody tr td#noActivity {
+    background-image: url(stripe.png);
+    background-repeat: repeat;
+    font-weight: 700;
+}
+
+/* classInfo styles */
+
+div.classInfo {
+    width: 90%;
+    margin: 0px auto;
+}
+
+/* Header styles */
+
+div h2{
+    margin-top: 100px;
+}
+
+/* table anchor styles */
+
+tr td a {
+    text-decoration: none;
+    color: black;
+}
+
+tr td a:active {
+    padding: 30px 10px;
+    background-color: gold;
+}
+
+/* h3 and p indentation style */
+
+div h3 + p {
+    margin-top: 5px;
+    margin-left: 15px;
+}
